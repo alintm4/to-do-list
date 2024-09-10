@@ -29,7 +29,7 @@ function Todoall() {
         setTodo(formattedData);
       }
       else{
-        console.log("Error fetching data")
+        console.log("Error fetching data haha")
       }
     };
     todo_fetch();

@@ -10,7 +10,7 @@ function Todoall() {
   useEffect(() => {
     const todo_fetch = async () => {
       const token = localStorage.getItem("token");
-      const response = await fetch("https://to-do-xnc4.onrender.com/todos", {
+      const response = await fetch("https://to-do-list-tor6.onrender.com/todos", {
         method: "GET",
         headers: {
           "Content-type": "application/json",
@@ -56,7 +56,7 @@ function Todoall() {
   const deleteTask =async (id) => {
     setTodo(todos.filter((todo) => todo.id !== id));
     const token = localStorage.getItem("token");
-    const response = await fetch(`https://to-do-xnc4.onrender.com/todos/${id}`, {
+    const response = await fetch(`https://to-do-list-tor6.onrender.com/todos/${id}`, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json",

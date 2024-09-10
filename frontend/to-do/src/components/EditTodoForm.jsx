@@ -9,7 +9,7 @@ function EditTodoForm({editTask,tasks}) {
 
 
       const token = localStorage.getItem("token");
-      const response = await fetch(`https://to-do-xnc4.onrender.com/todos/${tasks.id}`, {
+      const response = await fetch(`https://to-do-list-tor6.onrender.com/todos/${tasks.id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

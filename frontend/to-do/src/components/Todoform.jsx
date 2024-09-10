@@ -9,7 +9,7 @@ function Todoform({ item }) {
     setDataItem("");
     const token = localStorage.getItem("token");
 
-    const response = await fetch("https://to-do-xnc4.onrender.com/todos", {
+    const response = await fetch("https://to-do-list-tor6.onrender.com/todos", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
